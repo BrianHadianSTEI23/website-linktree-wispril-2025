@@ -1,23 +1,11 @@
 "use client";
 
 import Image from "next/image";
-import { useRouter, useSearchParams } from "next/navigation";
 import { useState } from "react";
-import Link from "next/link";
 
 
 export default function Home() {
-  const router = useRouter();
-  const searchParams = useSearchParams();
   const [isOverlayOpen, setIsOverlayOpen] = useState(false);
-  // const isOpen = searchParams.get("modal") === "true";
-
-  // const openModal = () => router.push("?modal=true", { scroll: false });
-  // const closeModal = () => router.push("/", { scroll: false });
-
-  // const toggleContent = () => {
-  //   router.push(isOpen ? "/" : "/?modal=true", { scroll: false });
-  // }
 
   return (
     <div className="bg-[#003092] min-h-screen w-full sm:p-20 font-[family-name:var(--font-geist-sans)]">
